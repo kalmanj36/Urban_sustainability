@@ -18,12 +18,12 @@ NAIP imagery of Philadelphia was analyzed using Python and machine learning to c
 
 ### NAIP
 
-Green Leaf Index = (G - R) / (G + R + 1e-5) /n
+Green Leaf Index = (G - R) / (G + R + 1e-5) \n
 <img src= "data/gli.png" width= "300" />
 <img src= "data/chartveg.png" width= "300" />
 <img src= "data/vegmap.png" width= "300" />
 
-Land Cover Index= (R + G - B) / (R + G + B + 1e-6) /n
+Land Cover Index= (R + G - B) / (R + G + B + 1e-6) \n
 <img src= "data/lci.png" width= "300" />
 <img src= "data/chartland.png" width= "300" />
 <img src= "data/heatmap.png" width= "300" />
