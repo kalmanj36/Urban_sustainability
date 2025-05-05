@@ -5,6 +5,7 @@ Comorbidity is a condition that effects up to 25% of the population. It means th
 [Prediction Visualization](http:///C:/Users/kalmanj/Documents/SCHOOL/695/Final/high_risk_topo_map.html)
 
 ## Introducing the Data
+
 <img src= "data/hist.png" width="300"/>
 <img src= "data/dvchart1.png" width= "300"/>
 <img src= "data/dvchart2.png" width= "300"/>
@@ -17,13 +18,13 @@ NAIP imagery of Philadelphia was analyzed using Python and machine learning to c
 
 ### NAIP
 GLI
-<img src= "data/gli.png", width= "300" />
-<img src= "data/chartveg.png", width= "300" />
-<img src= "data/vegmap.png", width= "300" />
+<img src= "data/gli.png" width= "300" />
+<img src= "data/chartveg.png" width= "300" />
+<img src= "data/vegmap.png" width= "300" />
 Land Cover
-<img src= "data/lci.png", width= "300" />
-<img src= "data/chartland.png", width= "300" />
-<img src= "data/heatmap.png", width= "300" />
+<img src= "data/lci.png" width= "300" />
+<img src= "data/chartland.png" width= "300" />
+<img src= "data/heatmap.png" width= "300" />
 
 
 
