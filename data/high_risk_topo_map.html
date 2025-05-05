@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0a89b3ed8e6d433a8aaa9d635bab3039 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumpopup {
+                            margin: auto;
+                        }
+                       .foliumpopup table{
+                            margin: auto;
+                        }
+                        .foliumpopup tr{
+                            text-align: left;
+                        }
+                        .foliumpopup th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0a89b3ed8e6d433a8aaa9d635bab3039" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0a89b3ed8e6d433a8aaa9d635bab3039 = L.map(
+                "map_0a89b3ed8e6d433a8aaa9d635bab3039",
+                {
+                    center: [39.986485821827195, -75.2402568367972],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ed1c7f8f73f7ea39b07c9e43c6e08c4c = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Tiles \u00a9 Esri \u2014 Source: USGS, NOAA, NPS",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_ed1c7f8f73f7ea39b07c9e43c6e08c4c.addTo(map_0a89b3ed8e6d433a8aaa9d635bab3039);
+        
+    
+        function geo_json_23a83aac1310b067b5e19fc0b46eec27_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "black", "fillColor": "red", "fillOpacity": 0.6, "weight": 1};
+            }
+        }
+
+        function geo_json_23a83aac1310b067b5e19fc0b46eec27_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_23a83aac1310b067b5e19fc0b46eec27 = L.geoJson(null, {
+                onEachFeature: geo_json_23a83aac1310b067b5e19fc0b46eec27_onEachFeature,
+            
+                style: geo_json_23a83aac1310b067b5e19fc0b46eec27_styler,
+            ...{
+}
+        });
+
+        function geo_json_23a83aac1310b067b5e19fc0b46eec27_add (data) {
+            geo_json_23a83aac1310b067b5e19fc0b46eec27
+                .addData(data);
+        }
+            geo_json_23a83aac1310b067b5e19fc0b46eec27_add({"bbox": [-75.27587, 39.96994, -75.20099, 40.00714], "features": [{"bbox": [-75.21536, 40.00124, -75.20099, 40.00714], "geometry": {"coordinates": [[[[-75.21479, 40.00289], [-75.21462, 40.00336], [-75.21437, 40.00409], [-75.21405, 40.00501], [-75.21403, 40.00508], [-75.21352, 40.00495], [-75.21258, 40.00479], [-75.21243, 40.00479], [-75.21232, 40.00481], [-75.21216, 40.00485], [-75.21202, 40.00488], [-75.21187, 40.00497], [-75.21185, 40.00499], [-75.2113, 40.00542], [-75.21079, 40.00582], [-75.21041, 40.00611], [-75.21008, 40.00639], [-75.21002, 40.0065], [-75.20995, 40.00663], [-75.20982, 40.00688], [-75.20977, 40.00698], [-75.2097, 40.00706], [-75.20955, 40.00714], [-75.20948, 40.00709], [-75.20858, 40.00638], [-75.20836, 40.00628], [-75.20818, 40.00624], [-75.20798, 40.00625], [-75.20778, 40.0063], [-75.20774, 40.00632], [-75.20759, 40.0064], [-75.2075, 40.00647], [-75.20707, 40.00632], [-75.20605, 40.00601], [-75.20338, 40.00516], [-75.20129, 40.00597], [-75.20099, 40.00527], [-75.20126, 40.00517], [-75.20153, 40.00509], [-75.20179, 40.00497], [-75.20193, 40.00487], [-75.20206, 40.00473], [-75.20218, 40.00455], [-75.20219, 40.00454], [-75.20274, 40.00382], [-75.20277, 40.00378], [-75.20284, 40.00371], [-75.20291, 40.00363], [-75.20319, 40.00339], [-75.20336, 40.00338], [-75.20476, 40.00316], [-75.20503, 40.00312], [-75.20638, 40.00292], [-75.20671, 40.00287], [-75.20737, 40.00277], [-75.20771, 40.00271], [-75.20825, 40.00262], [-75.20835, 40.0026], [-75.20916, 40.00247], [-75.20924, 40.00245], [-75.20938, 40.00243], [-75.20946, 40.00242], [-75.21047, 40.00224], [-75.21114, 40.00212], [-75.21167, 40.00204], [-75.21176, 40.00202], [-75.21304, 40.00175], [-75.21444, 40.00144], [-75.21536, 40.00124], [-75.21479, 40.00289]]]], "type": "MultiPolygon"}, "id": "0", "properties": {"ALAND": 376738, "AWATER": 2325, "B10010_003E": null, "B17006_006E": 0, "B27002_001E": 2828, "B27003_001E": 2828, "COUNTYFP": 101, "FUNCSTAT": "S", "HH_SSIncome": 242, "HH_oneearner": 182, "HH_oneworker": 967, "HHwithchildSNAP": 132, "INTPTLAT": 40.0034648, "INTPTLON": -75.2106388, "MTFCC": "G5020", "NAME.x": 122.01, "NAME.y": "Census Tract 122.01, Philadelphia County, Pennsylvania", "NAMELSAD": "Census Tract 122.01", "PCTHH_oneearner": 0.064356436, "PCTHH_oneworker": 0.341937765, "PCTPrivate35_64": 0.64321608, "PCTPublic35_64": 0.093467337, "PCT_RecSSI": 0.118511263, "PCTblack": 0.559759547, "PCTchild_disabled_privateins": 0.055162659, "PCTchild_disabled_publicins": 0.123408769, "PCTchildpov": 0.0, "PCTdisabled_belpov": 0.084158416, "PCTdisabled_nopov": 0.036775106, "PCTfamiliesSNAP": 0.064642507, "PCThispanic": 0.037128713, "PCTinternetaccess": 0.793829579, "PCTnovehicle": 0.389813908, "PCTpov": 0.22029703, "PCTvacant": 0.161606268, "PCTwhite": 0.253182461, "STATEFP": 42, "TRACTCE": 12201, "VAins35_64": 0, "blackpop": 1583, "bufferzone": "Outside", "child_disabled_privateins": 156, "child_disabled_publicins": 349, "childpop": 349, "como.rate": 0.310344827586207, "disabled_belpov": 238, "disabled_nopov": 104, "empins_35_64": 571, "geocode": 42101012201, "geometry_y": "MULTIPOLYGON (((-75.21479 40.00289, -75.21462 40.00336, -75.21437 40.00409, -75.21405 40.00501, -75.21403 40.00508, -75.21352 40.00495, -75.21258 40.00479, -75.21243 40.00479, -75.21232 40.00481, -75.21216 40.00485, -75.21202 40.00488, -75.21187 40.00497, -75.21185 40.00499, -75.2113 40.00542, -75.21079 40.00582, -75.21041 40.00611, -75.21008 40.00639, -75.21002 40.0065, -75.20995 40.00663, -75.20982 40.00688, -75.20977 40.00698, -75.2097 40.00706, -75.20955 40.00714, -75.20948 40.00709, -75.20858 40.00638, -75.20836 40.00628, -75.20818 40.00624, -75.20798 40.00625, -75.20778 40.0063, -75.20774 40.00632, -75.20759 40.0064, -75.2075 40.00647, -75.20707 40.00632, -75.20605 40.00601, -75.20338 40.00516, -75.20129 40.00597, -75.20099 40.00527, -75.20126 40.00517, -75.20153 40.00509, -75.20179 40.00497, -75.20193 40.00487, -75.20206 40.00473, -75.20218 40.00455, -75.20219 40.00454, -75.20274 40.00382, -75.20277 40.00378, -75.20284 40.00371, -75.20291 40.00363, -75.20319 40.00339, -75.20336 40.00338, -75.20476 40.00316, -75.20503 40.00312, -75.20638 40.00292, -75.20671 40.00287, -75.20737 40.00277, -75.20771 40.00271, -75.20825 40.00262, -75.20835 40.0026, -75.20916 40.00247, -75.20924 40.00245, -75.20938 40.00243, -75.20946 40.00242, -75.21047 40.00224, -75.21114 40.00212, -75.21167 40.00204, -75.21176 40.00202, -75.21304 40.00175, -75.21444 40.00144, -75.21536 40.00124, -75.21479 40.00289)))", "heat_coverage": 0.3961893760431632, "high_risk": true, "indins_35_64": 69, "internetaccess": 1621, "med_HH_Income": 36646.0, "medicaid_35_64": 93, "medicare_35_64": 0, "ownernovehicle": 0, "poverty": 623, "povertychild": 0, "pred_como.rate": 0.2668961952887831, "racehispanic": 105, "renternovehicle": 796, "total_HU": 2042, "total_pop": 2828, "total_vacant": 330, "totalpop_35_64": 995, "tricare_35_64": 0, "veg_cat": "Medium", "veg_coverage": 0.07714738525865165, "whitepop": 716, "workfulltime_ins": 932}, "type": "Feature"}, {"bbox": [-75.27587, 39.96994, -75.2598, 39.97928], "geometry": {"coordinates": [[[[-75.27547, 39.97743], [-75.27528, 39.97751], [-75.27355, 39.97828], [-75.27315, 39.97845], [-75.27303, 39.97851], [-75.27226, 39.97886], [-75.27153, 39.97918], [-75.27131, 39.97928], [-75.27031, 39.97799], [-75.27005, 39.97767], [-75.26981, 39.9774], [-75.26958, 39.9771], [-75.26933, 39.97678], [-75.2691, 39.97651], [-75.26889, 39.97625], [-75.26869, 39.976], [-75.26846, 39.97572], [-75.26759, 39.97466], [-75.26556, 39.97564], [-75.26528, 39.97537], [-75.26503, 39.97514], [-75.26426, 39.97442], [-75.26394, 39.97468], [-75.26281, 39.97561], [-75.26305, 39.97575], [-75.26203, 39.97674], [-75.26199, 39.97682], [-75.26196, 39.9769], [-75.26197, 39.97699], [-75.26199, 39.97706], [-75.26204, 39.97715], [-75.26224, 39.97726], [-75.262, 39.9776], [-75.26087, 39.97718], [-75.26087, 39.97712], [-75.26074, 39.97689], [-75.26065, 39.9757], [-75.26049, 39.97563], [-75.26036, 39.97555], [-75.26011, 39.97539], [-75.26003, 39.97528], [-75.25993, 39.97515], [-75.25981, 39.97487], [-75.25981, 39.97484], [-75.2598, 39.97467], [-75.25981, 39.97458], [-75.25982, 39.97452], [-75.25981, 39.9744], [-75.25993, 39.97445], [-75.25995, 39.97427], [-75.2618, 39.97268], [-75.2619, 39.97258], [-75.26387, 39.97124], [-75.26562, 39.96994], [-75.26769, 39.97131], [-75.26758, 39.97166], [-75.26857, 39.97239], [-75.26857, 39.9725], [-75.26859, 39.97251], [-75.26881, 39.97266], [-75.26904, 39.97274], [-75.26919, 39.97286], [-75.26931, 39.97301], [-75.27164, 39.97208], [-75.27214, 39.97268], [-75.27289, 39.97353], [-75.27378, 39.97466], [-75.27383, 39.97472], [-75.27587, 39.97725], [-75.27547, 39.97743]]]], "type": "MultiPolygon"}, "id": "1", "properties": {"ALAND": 613208, "AWATER": 0, "B10010_003E": null, "B17006_006E": 0, "B27002_001E": 5713, "B27003_001E": 5713, "COUNTYFP": 101, "FUNCSTAT": "S", "HH_SSIncome": 207, "HH_oneearner": 611, "HH_oneworker": 1014, "HHwithchildSNAP": 424, "INTPTLAT": 39.9745848, "INTPTLON": -75.2678779, "MTFCC": "G5020", "NAME.x": 98.02, "NAME.y": "Census Tract 98.02, Philadelphia County, Pennsylvania", "NAMELSAD": "Census Tract 98.02", "PCTHH_oneearner": 0.106949064, "PCTHH_oneworker": 0.177489935, "PCTPrivate35_64": 0.753289474, "PCTPublic35_64": 0.039473684, "PCT_RecSSI": 0.098243949, "PCTblack": 0.907404166, "PCTchild_disabled_privateins": 0.20182041, "PCTchild_disabled_publicins": 0.128478908, "PCTchildpov": 0.335325365, "PCTdisabled_belpov": 0.011552599, "PCTdisabled_nopov": 0.05671276, "PCTfamiliesSNAP": 0.201233982, "PCThispanic": 0.02853142, "PCTinternetaccess": 0.878974846, "PCTnovehicle": 0.124347413, "PCTpov": 0.201120252, "PCTvacant": 0.100616991, "PCTwhite": 0.066514966, "STATEFP": 42, "TRACTCE": 9802, "VAins35_64": 19, "blackpop": 5184, "bufferzone": "Outside", "child_disabled_privateins": 1153, "child_disabled_publicins": 734, "childpop": 1506, "como.rate": 0.2, "disabled_belpov": 66, "disabled_nopov": 324, "empins_35_64": 1506, "geocode": 42101009802, "geometry_y": "MULTIPOLYGON (((-75.27547 39.97743, -75.27528 39.97751, -75.27355 39.97828, -75.27315 39.97845, -75.27303 39.97851, -75.27226 39.97886, -75.27153 39.97918, -75.27131 39.97928, -75.27031 39.97799, -75.27005 39.97767, -75.26981 39.9774, -75.26958 39.9771, -75.26933 39.97678, -75.2691 39.97651, -75.26889 39.97625, -75.26869 39.976, -75.26846 39.97572, -75.26759 39.97466, -75.26556 39.97564, -75.26528 39.97537, -75.26503 39.97514, -75.26426 39.97442, -75.26394 39.97468, -75.26281 39.97561, -75.26305 39.97575, -75.26203 39.97674, -75.26199 39.97682, -75.26196 39.9769, -75.26197 39.97699, -75.26199 39.97706, -75.26204 39.97715, -75.26224 39.97726, -75.262 39.9776, -75.26087 39.97718, -75.26087 39.97712, -75.26074 39.97689, -75.26065 39.9757, -75.26049 39.97563, -75.26036 39.97555, -75.26011 39.97539, -75.26003 39.97528, -75.25993 39.97515, -75.25981 39.97487, -75.25981 39.97484, -75.2598 39.97467, -75.25981 39.97458, -75.25982 39.97452, -75.25981 39.9744, -75.25993 39.97445, -75.25995 39.97427, -75.2618 39.97268, -75.2619 39.97258, -75.26387 39.97124, -75.26562 39.96994, -75.26769 39.97131, -75.26758 39.97166, -75.26857 39.97239, -75.26857 39.9725, -75.26859 39.97251, -75.26881 39.97266, -75.26904 39.97274, -75.26919 39.97286, -75.26931 39.97301, -75.27164 39.97208, -75.27214 39.97268, -75.27289 39.97353, -75.27378 39.97466, -75.27383 39.97472, -75.27587 39.97725, -75.27547 39.97743)))", "heat_coverage": 0.39417406665643584, "high_risk": true, "indins_35_64": 97, "internetaccess": 1852, "med_HH_Income": 66830.0, "medicaid_35_64": 65, "medicare_35_64": 0, "ownernovehicle": 157, "poverty": 1149, "povertychild": 505, "pred_como.rate": 0.2682320134860818, "racehispanic": 163, "renternovehicle": 105, "total_HU": 2107, "total_pop": 5713, "total_vacant": 212, "totalpop_35_64": 2128, "tricare_35_64": 0, "veg_cat": "Low", "veg_coverage": 0.02971442219470425, "whitepop": 380, "workfulltime_ins": 1812}, "type": "Feature"}, {"bbox": [-75.25106, 39.97508, -75.23724, 39.98662], "geometry": {"coordinates": [[[[-75.25106, 39.9816], [-75.24835, 39.98297], [-75.24867, 39.98468], [-75.24899, 39.98511], [-75.24819, 39.98547], [-75.24783, 39.98552], [-75.24752, 39.98566], [-75.24737, 39.98573], [-75.2467, 39.98605], [-75.24644, 39.98617], [-75.24548, 39.98662], [-75.24518, 39.98609], [-75.2451, 39.98599], [-75.24499, 39.98589], [-75.24482, 39.9858], [-75.24467, 39.98572], [-75.24449, 39.98567], [-75.24424, 39.98563], [-75.24389, 39.98558], [-75.24342, 39.98555], [-75.24288, 39.98549], [-75.24126, 39.98531], [-75.24015, 39.98521], [-75.23966, 39.98516], [-75.23929, 39.98513], [-75.23823, 39.98503], [-75.23777, 39.98498], [-75.23739, 39.98485], [-75.23724, 39.98484], [-75.23805, 39.98354], [-75.23861, 39.9826], [-75.23874, 39.98238], [-75.23904, 39.98195], [-75.23933, 39.98145], [-75.23942, 39.98128], [-75.23947, 39.98111], [-75.23947, 39.98091], [-75.23938, 39.98042], [-75.2393, 39.98002], [-75.23926, 39.97975], [-75.23919, 39.97942], [-75.23912, 39.97907], [-75.23905, 39.97865], [-75.23901, 39.97842], [-75.23889, 39.97782], [-75.23884, 39.97756], [-75.23879, 39.97728], [-75.23869, 39.97673], [-75.23857, 39.9761], [-75.2394, 39.97601], [-75.24023, 39.97592], [-75.24101, 39.97583], [-75.2418, 39.97575], [-75.24269, 39.97565], [-75.24358, 39.97555], [-75.24448, 39.97545], [-75.24554, 39.97533], [-75.2466, 39.97521], [-75.24681, 39.97519], [-75.24749, 39.97511], [-75.2478, 39.97508], [-75.24807, 39.97656], [-75.24833, 39.97797], [-75.24837, 39.97812], [-75.24843, 39.9783], [-75.24853, 39.97854], [-75.24863, 39.97871], [-75.2487, 39.97881], [-75.24878, 39.97892], [-75.24894, 39.97911], [-75.24923, 39.97945], [-75.24946, 39.97971], [-75.24973, 39.98003], [-75.25, 39.98034], [-75.2502, 39.98058], [-75.25106, 39.9816]]]], "type": "MultiPolygon"}, "id": "2", "properties": {"ALAND": 972947, "AWATER": 0, "B10010_003E": null, "B17006_006E": 0, "B27002_001E": 6426, "B27003_001E": 6426, "COUNTYFP": 101, "FUNCSTAT": "S", "HH_SSIncome": 282, "HH_oneearner": 507, "HH_oneworker": 1248, "HHwithchildSNAP": 497, "INTPTLAT": 39.9807388, "INTPTLON": -75.2440178, "MTFCC": "G5020", "NAME.x": 114.0, "NAME.y": "Census Tract 114, Philadelphia County, Pennsylvania", "NAMELSAD": "Census Tract 114", "PCTHH_oneearner": 0.078898226, "PCTHH_oneworker": 0.194211018, "PCTPrivate35_64": 0.493629264, "PCTPublic35_64": 0.380600082, "PCT_RecSSI": 0.090038314, "PCTblack": 0.936352319, "PCTchild_disabled_privateins": 0.148926237, "PCTchild_disabled_publicins": 0.074696545, "PCTchildpov": 0.527443106, "PCTdisabled_belpov": 0.069094304, "PCTdisabled_nopov": 0.038748833, "PCTfamiliesSNAP": 0.158684547, "PCThispanic": 0.01774043, "PCTinternetaccess": 0.749042146, "PCTnovehicle": 0.421455939, "PCTpov": 0.342514784, "PCTvacant": 0.120689655, "PCTwhite": 0.045907252, "STATEFP": 42, "TRACTCE": 11400, "VAins35_64": 0, "blackpop": 6017, "bufferzone": "Outside", "child_disabled_privateins": 957, "child_disabled_publicins": 480, "childpop": 1494, "como.rate": 0.264957264957265, "disabled_belpov": 444, "disabled_nopov": 249, "empins_35_64": 1067, "geocode": 42101011400, "geometry_y": "MULTIPOLYGON (((-75.25106 39.9816, -75.24835 39.98297, -75.24867 39.98468, -75.24899 39.98511, -75.24819 39.98547, -75.24783 39.98552, -75.24752 39.98566, -75.24737 39.98573, -75.2467 39.98605, -75.24644 39.98617, -75.24548 39.98662, -75.24518 39.98609, -75.2451 39.98599, -75.24499 39.98589, -75.24482 39.9858, -75.24467 39.98572, -75.24449 39.98567, -75.24424 39.98563, -75.24389 39.98558, -75.24342 39.98555, -75.24288 39.98549, -75.24126 39.98531, -75.24015 39.98521, -75.23966 39.98516, -75.23929 39.98513, -75.23823 39.98503, -75.23777 39.98498, -75.23739 39.98485, -75.23724 39.98484, -75.23805 39.98354, -75.23861 39.9826, -75.23874 39.98238, -75.23904 39.98195, -75.23933 39.98145, -75.23942 39.98128, -75.23947 39.98111, -75.23947 39.98091, -75.23938 39.98042, -75.2393 39.98002, -75.23926 39.97975, -75.23919 39.97942, -75.23912 39.97907, -75.23905 39.97865, -75.23901 39.97842, -75.23889 39.97782, -75.23884 39.97756, -75.23879 39.97728, -75.23869 39.97673, -75.23857 39.9761, -75.2394 39.97601, -75.24023 39.97592, -75.24101 39.97583, -75.2418 39.97575, -75.24269 39.97565, -75.24358 39.97555, -75.24448 39.97545, -75.24554 39.97533, -75.2466 39.97521, -75.24681 39.97519, -75.24749 39.97511, -75.2478 39.97508, -75.24807 39.97656, -75.24833 39.97797, -75.24837 39.97812, -75.24843 39.9783, -75.24853 39.97854, -75.24863 39.97871, -75.2487 39.97881, -75.24878 39.97892, -75.24894 39.97911, -75.24923 39.97945, -75.24946 39.97971, -75.24973 39.98003, -75.25 39.98034, -75.2502 39.98058, -75.25106 39.9816)))", "heat_coverage": 0.390442403738337, "high_risk": true, "indins_35_64": 134, "internetaccess": 2346, "med_HH_Income": 37530.0, "medicaid_35_64": 592, "medicare_35_64": 334, "ownernovehicle": 349, "poverty": 2201, "povertychild": 788, "pred_como.rate": 0.2620970523558752, "racehispanic": 114, "renternovehicle": 971, "total_HU": 3132, "total_pop": 6426, "total_vacant": 378, "totalpop_35_64": 2433, "tricare_35_64": 0, "veg_cat": "Medium", "veg_coverage": 0.054517774685214335, "whitepop": 295, "workfulltime_ins": 1797}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_23a83aac1310b067b5e19fc0b46eec27.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["geocode", "como.rate", "total_pop", "med_HH_Income", "PCTpov", "PCTvacant", "PCTnovehicle", "PCTinternetaccess", "PCTPublic35_64", "PCTblack", "PCTwhite", "PCThispanic", "heat_coverage", "veg_cat", "pred_como.rate"];
+    let aliases = ["Geocode", "Real comorbidity Rate", "Population", "Median Household Income", "% Poverty", "% Vacant", "% no vehicle", "% internet access", "% with Public Insurance (35-64)", "% black", "% white", "% hispanic", "Land Coverage Index", "Green Index (gli)", "Predicted Comorbidity Rate"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "sticky": true,
+  "className": "foliumtooltip",
+});
+                     
+    
+    geo_json_23a83aac1310b067b5e19fc0b46eec27.bindPopup(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["geocode", "total_pop", "med_HH_Income", "PCTpov", "PCTvacant", "PCTnovehicle", "PCTinternetaccess", "PCTPublic35_64", "PCTblack", "PCTwhite", "PCThispanic"];
+    let aliases = ["Geocode", "Population", "Median Household Income", "% Poverty", "% Vacant", "% no vehicle", "% internet access", "% with Public Insurance (35-64)", "% black", "% white", "% hispanic"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "maxWidth": 300,
+  "className": "foliumpopup",
+});
+                     
+    
+            geo_json_23a83aac1310b067b5e19fc0b46eec27.addTo(map_0a89b3ed8e6d433a8aaa9d635bab3039);
+        
+    
+            var layer_control_7c28bb1387a5981a5143d2708b29c4db_layers = {
+                base_layers : {
+                    "https://server.arcgisonline.com/arcgis/rest/services/world_topo_map/mapserver/tile/{z}/{y}/{x}" : tile_layer_ed1c7f8f73f7ea39b07c9e43c6e08c4c,
+                },
+                overlays :  {
+                    "Filtered High Risk Areas" : geo_json_23a83aac1310b067b5e19fc0b46eec27,
+                },
+            };
+            let layer_control_7c28bb1387a5981a5143d2708b29c4db = L.control.layers(
+                layer_control_7c28bb1387a5981a5143d2708b29c4db_layers.base_layers,
+                layer_control_7c28bb1387a5981a5143d2708b29c4db_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_0a89b3ed8e6d433a8aaa9d635bab3039);
+
+        
+</script>
+</html>
