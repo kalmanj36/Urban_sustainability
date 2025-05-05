@@ -4,7 +4,7 @@ Comorbidity is a condition that effects up to 25% of the population. It means th
 
 [Prediction Visualization](http:///C:/Users/kalmanj/Documents/SCHOOL/695/Final/high_risk_topo_map.html)
 
-##Methodology
+## Methodology
 NAIP imagery of Philadelphia was analyzed using Python and machine learning to calculate the Land cover Index and Green Leaf Index. In order to predict a tract that is not already being served by an FQHC, a buffer was created at 1/4 a mile surrounding each FQHC location. 
 
 
