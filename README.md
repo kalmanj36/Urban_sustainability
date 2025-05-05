@@ -7,7 +7,7 @@ Comorbidity is a condition that effects up to 25% of the population. It means th
 ## Introducing the Data
 <img src= "data/hist.png" width="300"/>
 
-![Chart1](data/dvchart1.png)
+<img src= "data/dvchart1.png" width= "300"/>
 ![Chart2](data/dvchart2.png)
 
 ## Methodology
