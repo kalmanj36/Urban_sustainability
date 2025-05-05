@@ -26,7 +26,7 @@ NAIP imagery of Philadelphia was analyzed using Python and machine learning to c
 <img src= "data/heatmap.png" width= "300" />
 
 ### Regression
-<img src= "data/reg.png" width= "300" />
+<img src= "data/reg.png" width= "400" />
 
 
 
