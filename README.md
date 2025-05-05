@@ -46,5 +46,5 @@ Using machine learning, the following tracts were identified with the following 
 - Population >0
 - Rate of poverty > 20% (Top quartile)
 - Black poulation > 40% (Top quartile)
-
+<img src= "data/high_risk_animation.gif" width= "400" />
 
