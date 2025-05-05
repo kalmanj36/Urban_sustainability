@@ -33,5 +33,11 @@ NAIP imagery of Philadelphia was analyzed using Python and machine learning to c
 
 The Land cover Index, aka heat_coverage, comes back statistically significant with a p-value of < 0.05. This variable will be used for the final prediction since over-exposure to heat is an agitator for certain comorbid conditions like COPD or stroke. 
 
+### Ask yourself: 
+#### Are low-cost neighborhoods settled by vulnerable populations because environmental risk from urban development reduces property value first <br>
+or <br>
+#### Does Urban development subject vulnerable populations to undue environmental burden first and then their neighborhoods lose value after?
+
+
 
 
