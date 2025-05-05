@@ -7,7 +7,7 @@ Comorbidity is a condition that effects up to 25% of the population. It means th
 ## Introducing the Data
 ![Histogram](data/hist.png)
 ![Chart1](data/dvchart1.png)
-![Chart2](data/dvchart 2.png)
+![Chart2](data/dvchart2.png)
 
 ## Methodology
 NAIP imagery of Philadelphia was analyzed using Python and machine learning to calculate the Land cover Index and Green Leaf Index. In order to predict a tract that is not already being served by an FQHC, a buffer was created at 1/4 a mile surrounding each FQHC location. The indicies were regressed onto the comorbidity rate to determine which metric should beused to guide the FQHC model prediction and recommendation. 
