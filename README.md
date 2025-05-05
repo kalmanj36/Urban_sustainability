@@ -48,3 +48,5 @@ Using machine learning, the following tracts were identified with the following 
 - Black poulation > 40% (Top quartile)
 <img src= "data/high_risk_animation.gif" width= "400" />
 
+## Conclusion
+Although the threshold identified three suitable choices for a new FQHC location, Overbrook would be my highest recommendation as a highly valuable and historic neighborhood who is deserving of the most investment, both from the persepctive of public health, and general social acceleration. Click the link for an interactive map that presents the attribute variables for the top 3 choices. 
