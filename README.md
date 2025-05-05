@@ -17,11 +17,10 @@ NAIP imagery of Philadelphia was analyzed using Python and machine learning to c
 <img src= "data/buffer.png" width= "300"/>
 
 ### NAIP
-GLI
 <img src= "data/gli.png" width= "300" />
 <img src= "data/chartveg.png" width= "300" />
 <img src= "data/vegmap.png" width= "300" />
-Land Cover
+
 <img src= "data/lci.png" width= "300" />
 <img src= "data/chartland.png" width= "300" />
 <img src= "data/heatmap.png" width= "300" />
