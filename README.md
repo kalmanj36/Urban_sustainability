@@ -15,6 +15,16 @@ NAIP imagery of Philadelphia was analyzed using Python and machine learning to c
 ### Buffer
 ![buffer](data/buffer.png)
 
+### NAIP
+GLI
+![gli](data/gli.png)
+![chart](data/chartveg.png)
+![map](data/vegmap.png)
+Land Cover
+![lcichart](data/lci.png)
+![chart](data/chartland.png)
+![map](data/heatmap.png)
+
 
 
 
