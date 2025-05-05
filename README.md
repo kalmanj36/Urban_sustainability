@@ -5,7 +5,7 @@ Comorbidity is a condition that effects up to 25% of the population. It means th
 [Prediction Visualization](http:///C:/Users/kalmanj/Documents/SCHOOL/695/Final/high_risk_topo_map.html)
 
 ## Introducing the Data
-[Histogram](data/hist.png)
+![Histogram](data/hist.png)
 
 
 ## Methodology
