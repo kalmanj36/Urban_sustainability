@@ -38,6 +38,13 @@ The Land cover Index, aka heat_coverage, comes back statistically significant wi
 or <br>
 #### Does Urban development subject vulnerable populations to undue environmental burden first and then their neighborhoods lose value after?
 
-
+## Results
+Using machine learning, the following tracts were identified with the following treshold: 
+- Outside of buffer variable
+- Land Cover Index > 0.375 (Top quartile)
+- Model Predicted Comorbidity Rate (Top quartile)
+- Population >0
+- Rate of poverty > 20% (Top quartile)
+- Black poulation > 40% (Top quartile)
 
 
