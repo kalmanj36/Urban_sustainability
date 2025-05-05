@@ -28,7 +28,7 @@ NAIP imagery of Philadelphia was analyzed using Python and machine learning to c
 ### Regression
 <img src= "data/reg.png" width= "400" />
 
-
+The Land cover Index, aka heat_coverage, comes back statistically significant with a p-value of < 0.05. This variable will be used for the final prediction since over-exposure to heat is an agitator for certain comorbid conditions like COPD or stroke. 
 
 
 
